@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>EasyQode - Produtos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Menu lateral -->
+  <div class="sidebar">
+    <h2>EasyQode</h2>
+    <a href="#" class="active">Produtos</a>
+    <a href="index.html">Pedidos</a>
+    <a href="#">Usuários</a>
+
+    <!-- Info do usuário -->
+    <div class="user">
+        <p><strong>Maria Eduarda</strong><br><small>prof.mariacardoso@unyleya.edu.br</small></p>
+    </div>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="main">
+    <h1>Cadastro de Produtos</h1>
+    <hr class="linha-separadora">
+
+    <!-- Formulário -->
+    <form id="formProduto" class="form-produto">
+      <label for="nome">Nome do Produto</label>
+      <input type="text" id="nome" required>
+
+      <label for="categoria">Categoria</label>
+      <select id="categoria">
+        <option value="Lanches">Lanches</option>
+        <option value="Bebidas">Bebidas</option>
+        <option value="Sobremesas">Sobremesas</option>
+      </select>
+
+      <label for="preco">Preço (R$)</label>
+      <input type="number" step="0.01" id="preco" required>
+
+      <label for="imagem">URL da Imagem</label>
+      <input type="url" id="imagem">
+
+      <button type="submit">Cadastrar Produto</button>
+    </form>
+
+    <!-- Lista de produtos cadastrados -->
+    <h2 style="margin-top: 2rem;">Produtos Cadastrados</h2>
+    <ul id="listaProdutos" class="lista-produtos">
+      <!-- Populado via JS -->
+    </ul>
+  </div>
+
+  <script src="produtos.js"></script>
+</body>
+</html>

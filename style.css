@@ -1,0 +1,178 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9fafb;
+    display: flex;
+    min-height: 100vh;
+    color: #333;
+  }
+  /* Estilo da barra lateral */
+  .sidebar {
+    width: 240px;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-right: 1px solid #ddd;
+  }
+  .sidebar h2 {
+    color: #3446eb;
+    margin-bottom: 2rem;
+  }
+  .sidebar a {
+    display: block;
+    margin: 1rem 0;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .sidebar a.active {
+    color: #3446eb;
+  }
+  /* Info do usuário */
+  .user {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+/* Área principal */
+  .main {
+    flex-grow: 1;
+    padding: 2rem;
+  }
+  .main h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  .linha-separadora {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 1rem 0;
+  }
+  
+  /* Área de filtros */
+  .filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .filters select,
+  .filters input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+/* Tabela de pedidos */
+  table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  th, td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    vertical-align: middle;
+  }
+  th {
+    background-color: #f3f4f6;
+  }
+  /* Status coloridos */
+  .status {
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: bold;
+  }
+  .entregue {
+    background-color: #d1fae5;
+    color: #065f46;
+  }
+  .preparando {
+    background-color: #fef9c3;
+    color: #92400e;
+  }
+  /* Imagem e nome do produto */
+  .produto {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .produto img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+  /* Botão de atualizar */
+  .refresh-btn {
+    background: none;
+    border: none;
+    color: #4b5563;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  /*css da página produtos */
+  .form-produto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .form-produto input,
+  .form-produto select,
+  .form-produto button {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .form-produto button {
+    background-color: #3446eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .form-produto button:hover {
+    background-color: #2c3fcf;
+  }
+  
+  .lista-produtos {
+    list-style: none;
+    margin-top: 1rem;
+    padding: 0;
+  }
+  
+  .lista-produtos li {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .lista-produtos img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  

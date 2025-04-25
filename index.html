@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>EasyQode - Pedidos</title>
+  <!-- Estilo da página -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Ícones (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Menu lateral -->
+  <div class="sidebar">
+    <h2>EasyQode</h2>
+    <a href="produtos.html">Produtos</a>
+    <a href="#" class="active">Pedidos</a>
+    <a href="#">Usuários</a>
+    <!-- Usuário logado -->
+    <div class="user">
+      <p><strong>Maria Eduarda</strong><br><small>prof.mariacardoso@unyleya.edu.br</small></p>
+    </div>
+  </div>
+<!-- Área principal -->
+  <div class="main">
+    <h1>Pedidos</h1>
+    <p id="subfrase">Gerencie todos os pedidos do seu delivery</p>
+    <hr class="linha-separadora">
+    <!-- Filtros -->
+    <div class="filters">
+        <!-- Filtro por status -->
+      <select id="statusFilter">
+        <option value="">Status</option>
+        <option value="Entregue">Entregue</option>
+        <option value="Em preparação">Em preparação</option>
+      </select>
+      <!-- Filtro por categoria -->
+      <select id="categoriaFilter">
+        <option value="">Lanches</option>
+        <option value="X Burger Triplo">X Burger Triplo</option>
+        <option value="X Salada">X Salada</option>
+      </select>
+       <!-- Campo de valor (visual apenas) -->
+      <input type="text" placeholder="Valor Máx">
+      <!-- Filtro por data -->
+      <input type="date" value="2025-04-17">
+    </div>
+    <!-- Tabela de pedidos -->
+    <table id="pedidosTable">
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Status</th>
+          <th>Cliente</th>
+          <th>Horário do Pedido</th>
+          <th>Horário de Entrega</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- As linhas da tabela serão inseridas dinamicamente com JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
