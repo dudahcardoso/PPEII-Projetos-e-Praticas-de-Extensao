@@ -3,63 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <title>EasyQode - Pedidos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Estilo da página -->
   <link rel="stylesheet" href="style.css">
+
   <!-- Ícones (Font Awesome) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!-- Menu lateral -->
-  <div class="sidebar">
+  <!-- Sidebar -->
+  <aside class="sidebar">
     <h2>EasyQode</h2>
-    <a href="produtos.html">Produtos</a>
-    <a href="index.html" class="active">Pedidos</a>
-    <a href="usuarios.html">Usuários</a>
-    <!-- Usuário logado -->
+    <nav>
+      <ul>
+        <li><a href="produtos.html"><i class="fas fa-box"></i> Produtos</a></li>
+        <li><a href="index.html" class="active"><i class="fas fa-receipt"></i> Pedidos</a></li>
+        <li><a href="usuarios.html"><i class="fas fa-users"></i> Usuários</a></li>
+      </ul>
+    </nav>
     <div class="user">
       <p><strong>Maria Eduarda</strong><br><small>prof.mariacardoso@unyleya.edu.br</small></p>
     </div>
-  </div>
-<!-- Área principal -->
-  <div class="main">
-    <h1>Pedidos</h1>
-    <p id="subfrase">Gerencie todos os pedidos do seu delivery</p>
+  </aside>
+
+  <!-- Conteúdo principal -->
+  <main class="main">
+    <header>
+      <h1>Pedidos</h1>
+      <p id="subfrase">Gerencie todos os pedidos do seu delivery</p>
+    </header>
+
     <hr class="linha-separadora">
+
     <!-- Filtros -->
-    <div class="filters">
-        <!-- Filtro por status -->
-      <select id="statusFilter">
+    <section class="filters" aria-label="Filtros de pedidos">
+      <select id="statusFilter" aria-label="Filtrar por status">
         <option value="">Status</option>
-        <option value="Entregue">Entregue</option>
-        <option value="Em preparação">Em preparação</option>
+        <option value="entregue">Entregue</option>
+        <option value="preparacao">Em preparação</option>
       </select>
-      <!-- Filtro por categoria -->
-      <select id="categoriaFilter">
-        <option value="">Lanches</option>
+
+      <select id="categoriaFilter" aria-label="Filtrar por categoria">
+        <option value="">Categoria</option>
         <option value="X Burger Triplo">X Burger Triplo</option>
         <option value="X Salada">X Salada</option>
       </select>
-       <!-- Campo de valor (visual apenas) -->
-      <input type="text" placeholder="Valor Máx">
-      <!-- Filtro por data -->
-      <input type="date" value="2025-04-17">
-    </div>
+
+      <div class="input-icon">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <input type="text" placeholder="Buscar valor" aria-label="Buscar por valor">
+      </div>
+
+      <div class="filter-group">
+        <label for="data"><i class="fas fa-calendar-alt"></i> Data</label>
+        <input type="date" id="data" name="data">
+      </div>
+    </section>
+
     <!-- Tabela de pedidos -->
-    <table id="pedidosTable">
-      <thead>
-        <tr>
-          <th>Produto</th>
-          <th>Status</th>
-          <th>Cliente</th>
-          <th>Horário do Pedido</th>
-          <th>Horário de Entrega</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- As linhas da tabela serão inseridas dinamicamente com JS -->
-      </tbody>
-    </table>
-  </div>
+    <section aria-label="Tabela de pedidos">
+      <table id="pedidosTable">
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Status</th>
+            <th>Cliente</th>
+            <th>Horário do Pedido</th>
+            <th>Horário de Entrega</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Conteúdo dinâmico inserido por JS -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <nav>
+        <a href="/ajuda"><i class="fas fa-question-circle"></i> Ajuda</a>
+        <a href="/perfil"><i class="fas fa-user"></i> Perfil</a>
+        <a href="/sair"><i class="fas fa-sign-out-alt"></i> Sair</a>
+      </nav>
+    </footer>
+  </main>
 
   <script src="script.js"></script>
 </body>
