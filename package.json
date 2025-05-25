@@ -1,0 +1,23 @@
+{
+  "name": "ppeii-projetos-e-praticas-de-extensao",
+  "version": "1.0.0",
+  "description": "Projetos e Práticas de Extensão II – PPE II​: Migração de sistemas no-code para code​",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dudahcardoso/PPEII-Projetos-e-Praticas-de-Extensao.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dudahcardoso/PPEII-Projetos-e-Praticas-de-Extensao/issues"
+  },
+  "homepage": "https://github.com/dudahcardoso/PPEII-Projetos-e-Praticas-de-Extensao#readme",
+  "devDependencies": {
+    "cypress": "^14.4.0"
+  }
+}
