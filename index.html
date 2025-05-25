@@ -1,67 +1,92 @@
 <!DOCTYPE html>
+<!-- Define o tipo de documento como HTML5 -->
 <html lang="pt-BR">
+<!-- Define o idioma da página como Português do Brasil -->
 <head>
   <meta charset="UTF-8">
+  <!-- Define a codificação de caracteres como UTF-8 -->
   <title>EasyQode - Pedidos</title>
+  <!-- Título exibido na aba do navegador -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configuração para a página ser responsiva em dispositivos móveis -->
 
-  <!-- Estilo da página -->
-  <link rel="stylesheet" href="style.css">
+  <!-- Estilo da página (arquivo CSS externo) -->
+  <link rel="stylesheet" href="./css/style.css">
 
-  <!-- Ícones (Font Awesome) -->
+  <!-- Ícones da biblioteca Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- Sidebar -->
+  <!-- Barra lateral de navegação -->
   <aside class="sidebar">
     <h2>EasyQode</h2>
+    <!-- Menu de navegação -->
     <nav>
       <ul>
-        <li><a href="produtos.html"><i class="fas fa-box"></i> Produtos</a></li>
-        <li><a href="index.html" class="active"><i class="fas fa-receipt"></i> Pedidos</a></li>
-        <li><a href="usuarios.html"><i class="fas fa-users"></i> Usuários</a></li>
+        <li>
+          <!-- Link para a página de produtos com ícone -->
+          <a href="produtos.html"><i class="fas fa-box"></i> Produtos</a>
+        </li>
+        <li>
+          <!-- Link ativo (página atual) para pedidos -->
+          <a href="index.html" class="active"><i class="fas fa-receipt"></i> Pedidos</a>
+        </li>
+        <li>
+          <!-- Link para a página de usuários -->
+          <a href="usuarios.html"><i class="fas fa-users"></i> Usuários</a>
+        </li>
       </ul>
     </nav>
+    <!-- Informações do usuário logado -->
     <div class="user">
-      <p><strong>Maria Eduarda</strong><br><small>prof.mariacardoso@unyleya.edu.br</small></p>
+      <p>
+        <strong>Maria Eduarda</strong><br>
+        <small>prof.mariacardoso@unyleya.edu.br</small>
+      </p>
     </div>
   </aside>
 
-  <!-- Conteúdo principal -->
+  <!-- Conteúdo principal da página -->
   <main class="main">
+    <!-- Cabeçalho da seção de pedidos -->
     <header>
       <h1>Pedidos</h1>
       <p id="subfrase">Gerencie todos os pedidos do seu delivery</p>
     </header>
 
+    <!-- Linha divisória visual -->
     <hr class="linha-separadora">
 
-    <!-- Filtros -->
+    <!-- Seção de filtros -->
     <section class="filters" aria-label="Filtros de pedidos">
+      <!-- Filtro por status do pedido -->
       <select id="statusFilter" aria-label="Filtrar por status">
         <option value="">Status</option>
-        <option value="entregue">Entregue</option>
-        <option value="preparacao">Em preparação</option>
+        <option value="Entregue">Entregue</option>
+        <option value="Em preparação">Em preparação</option>
       </select>
 
+      <!-- Filtro por categoria do produto -->
       <select id="categoriaFilter" aria-label="Filtrar por categoria">
         <option value="">Categoria</option>
         <option value="X Burger Triplo">X Burger Triplo</option>
         <option value="X Salada">X Salada</option>
       </select>
 
+      <!-- Campo de busca com ícone de lupa -->
       <div class="input-icon">
         <i class="fas fa-search" aria-hidden="true"></i>
         <input type="text" placeholder="Buscar valor" aria-label="Buscar por valor">
       </div>
 
+      <!-- Filtro por data do pedido -->
       <div class="filter-group">
         <label for="data"><i class="fas fa-calendar-alt"></i> Data</label>
         <input type="date" id="data" name="data">
       </div>
     </section>
 
-    <!-- Tabela de pedidos -->
+    <!-- Seção com a tabela de pedidos -->
     <section aria-label="Tabela de pedidos">
       <table id="pedidosTable">
         <thead>
@@ -74,12 +99,12 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Conteúdo dinâmico inserido por JS -->
+          <!-- As linhas da tabela serão adicionadas dinamicamente com JavaScript -->
         </tbody>
       </table>
     </section>
 
-    <!-- Rodapé -->
+    <!-- Rodapé com links adicionais -->
     <footer class="footer">
       <nav>
         <a href="/ajuda"><i class="fas fa-question-circle"></i> Ajuda</a>
@@ -89,6 +114,7 @@
     </footer>
   </main>
 
-  <script src="script.js"></script>
+  <!-- Importa o script JavaScript responsável pela lógica dinâmica da página -->
+  <script src="./js/script.js"></script>
 </body>
 </html>
