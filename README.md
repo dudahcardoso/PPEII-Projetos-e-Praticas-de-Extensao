@@ -33,6 +33,8 @@ Este projeto foi desenvolvido como parte da disciplina de Projetos e Práticas d
 ├── 📄 produtos.html 
 ├── 📄 pedidos.html 
 └── 📄 usuarios.html
+
+
 ![image](https://github.com/user-attachments/assets/92d1c661-98df-4f68-a6b8-f4a11dc0a38f)
 
 
