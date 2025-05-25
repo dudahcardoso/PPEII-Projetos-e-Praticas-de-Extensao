@@ -152,7 +152,7 @@ ul {
 }
 
 .fas.fa-search {
-  position: sticky;
+  position: sticky; 
   left: 20px;
   top: 50%;
   transform: translateY(-50%);
@@ -388,3 +388,4 @@ button:hover {
   border-radius: 4px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
 }
+/* fim */
