@@ -77,10 +77,10 @@ ul {
   color: #1d3df0; /* Cor do ícone ao passar o mouse */
 }
 
-.sidebar a.active {
+ .sidebar a.active {
   background-color: #1d3df0; /* Fundo ativo */
   color: #fff;               /* Texto branco */
-}
+ }
 
 .sidebar a.active i {
   color: #fff; /* Ícone branco no ativo */
@@ -152,11 +152,11 @@ ul {
 }
 
 .fas.fa-search {
-  position: absolute;
-  left: 10px;
+  position: sticky;
+  left: 20px;
   top: 50%;
   transform: translateY(-50%);
-  color: #999;
+  color: #0e0e0e;
 }
 
 .filter-group {
@@ -275,6 +275,8 @@ th {
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 .form-produto input,
@@ -290,7 +292,7 @@ th {
   color: white;
   border: none;
   cursor: pointer;
-  transition: background 0.2s;
+   transition: transform 0.2s ease; /* Transição suave */
 }
 
 .form-produto button:hover {
@@ -345,6 +347,8 @@ h2 {
 .form-card label {
   display: block;
   margin-top: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .form-card input,
@@ -362,9 +366,14 @@ h2 {
   padding: 20px;
   background: #3b3bff;
   color: white;
+  font-size: 1.6rem;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: transform 0.2s ease; /* Transição suave */
+}
+button:hover {
+  transform: scale(1.05); /* Aumenta 5% ao passar o mouse */
 }
 
 .lista {

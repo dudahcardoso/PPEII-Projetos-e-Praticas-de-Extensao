@@ -9,17 +9,34 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- Menu lateral -->
-  <div class="sidebar">
+   <!-- Barra lateral de navegação -->
+  <aside class="sidebar">
     <h2>EasyQode</h2>
-    <a href="produtos.html"><i class="fas fa-box"></i>Produtos</a>
-    <a href="index.html" class="active"><i class="fas fa-receipt"></i>Pedidos</a>
-    <a href="usuarios.html"><i class="fas fa-users"></i>Usuários</a>
-    <!-- Usuário logado -->
+    <!-- Menu de navegação -->
+    <nav>
+      <ul>
+        <li>
+          <!-- Link para a página de produtos com ícone -->
+          <a href="produtos.html"><i class="fas fa-box"></i> Produtos</a>
+        </li>
+        <li>
+          <!-- Link ativo (página atual) para pedidos -->
+          <a href="index.html"><i class="fas fa-receipt"></i> Pedidos</a>
+        </li>
+        <li>
+          <!-- Link para a página de usuários -->
+          <a href="usuarios.html" class="active"><i class="fas fa-users"></i> Usuários</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Informações do usuário logado -->
     <div class="user">
-      <p><strong>Maria Eduarda</strong><br><small>prof.mariacardoso@unyleya.edu.br</small></p>
+      <p>
+        <strong>Maria Eduarda</strong><br>
+        <small>prof.mariacardoso@unyleya.edu.br</small>
+      </p>
     </div>
-  </div>
+  </aside>
 
   <!-- Conteúdo principal -->
   <main class="main-content">

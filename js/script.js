@@ -93,3 +93,5 @@ categoriaFilter.addEventListener("change", () => {
 
 // Ao carregar a página, exibe todos os pedidos
 renderPedidos();
+
+
