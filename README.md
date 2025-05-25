@@ -22,9 +22,11 @@ Este projeto foi desenvolvido como parte da disciplina de Projetos e Práticas d
 ## 📦 Estrutura do Projeto
 📁 PPEII-Projetos-e-Praticas-de-Extensao 
 ├── 📁 css │ 
-└── estilos.css 
+└── style.css 
 ├── 📁 js │ 
-└── scripts.js 
+└── produto.js 
+└── script.js 
+└── usuario.js 
 ├── 📁 img │ 
 └── (imagens utilizadas no projeto) 
 ├── 📄 index.html 
@@ -34,7 +36,12 @@ Este projeto foi desenvolvido como parte da disciplina de Projetos e Práticas d
 
 ## 📸 Capturas de Tela
 
-*Adicione aqui imagens das principais telas da aplicação.*
+![image](https://github.com/user-attachments/assets/3afd32f6-74e2-421f-a026-b2b8969da30b)
+
+![image](https://github.com/user-attachments/assets/b405bd3e-6b3a-42b6-a9f1-3027b316f36d)
+
+![image](https://github.com/user-attachments/assets/6d09ca55-6bf1-4b79-8c1c-3bd61e9da28b)
+
 
 ## 📄 Licença
 
