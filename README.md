@@ -42,10 +42,21 @@ Este projeto foi desenvolvido como parte da disciplina de Projetos e Práticas d
 
 ![image](https://github.com/user-attachments/assets/6d09ca55-6bf1-4b79-8c1c-3bd61e9da28b)
 
+## 🚀 Como Rodar o Projeto Localmente
+1. Clone este repositório:
+   git clone https://github.com/seuusuario/nome-do-repo.git
+
+2. Acesse a pasta do projeto:
+   cd nome-do-repo
+
+3. Abra o arquivo `index.html` no navegador:
+   - Clique duas vezes no arquivo, ou
+   - Use uma extensão como "Live Server" no VS Code.
 
 ## 📄 Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
+![Licença](https://img.shields.io/badge/licença-MIT-blue)
 
 ## 👩‍💻 Autora
 
